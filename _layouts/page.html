@@ -4,7 +4,15 @@
   <link href="{{ site.baseurl }}/css/style.css" rel="stylesheet">
 </head>
 <body>
-{{ content }}
+  {% include header.html %}
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7">{{ content }}</div>
+      <div class="col-md-1"></div>
+      <div class="col-md-4">{% include sidebar.html %}</div>
+    </div>
+    {% include footer.html %}
+  </div>
   
   <script src="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/united/bootstrap.min.css">
     
